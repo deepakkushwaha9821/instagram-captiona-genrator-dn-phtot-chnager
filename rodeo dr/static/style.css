@@ -1,0 +1,238 @@
+body {
+    background-color: #212121; /* Dark gray background */
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* Add this to prevent scrolling */
+}
+
+/* Add a new container for the moving background effect */
+.moving-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right, #333, #444, #555);
+    background-size: 300px 100vh;
+    animation: move-background 10s linear infinite;
+}
+
+@keyframes move-background {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-300px);
+    }
+}
+
+.navbar {
+    background-color: #000000; /* Darker gray background for navbar */
+    padding: 1rem;
+    display: flex;
+    justify-content: center; /* Center the navbar elements horizontally */
+    align-items: center; /* Center the navbar elements vertically */
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center the navbar links horizontally */
+}
+
+.navbar li {
+    margin-right: 20px;
+}
+
+.nav-link {
+    color: #68E905; /* White text color */
+    text-shadow: #68E905;
+    padding: 10px 20px; /* Add padding to create a box around the link */
+    border-radius: 20px; /* Add a rounded corner effect */
+    transition: none; /* Remove transition effect */
+}
+
+.nav-link:hover {
+    box-shadow: 0 0 10px #8605e9, 0 0 20px #8605e9, 0 0 30px #8605e9; /* White shining neon effect */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+h1, p {
+    color: #fff; /* White text color */
+}
+
+.login-container {
+    width: 500px;
+    background-color: #333; /* Darker gray background for login container */
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 0 900px #8605e9;
+    margin: 100px auto;
+}
+
+h1 {
+    text-decoration-color: #68E905;
+    color: #68E905; /* White text color */
+    text-align: center;
+}
+
+label {
+    color: #68E905; /* White text color */
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #68E905;
+    color: #000000;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #ffffff;
+}
+
+p {
+    color: #ffffff; /* White text color */
+    text-align: center;
+}
+
+a {
+    color: #68E905; /* Blue text color */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fa0000;
+}
+.pricing-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px;
+}
+
+.pricing-plan {
+    background-color: #333;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #8605e9;
+    width: 250px;
+}
+
+.pricing-plan h2 {
+    color: #68E905;
+    text-align: center;
+}
+
+.pricing-plan p {
+    color: #fff;
+    text-align: center;
+}
+
+.pricing-plan ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pricing-plan li {
+    color: #fff;
+    padding: 10px;
+    border-bottom: 1px solid #444;
+}
+
+.pricing-plan li:last-child {
+    border-bottom: none;
+}
+
+.btn {
+    background-color: #68E905;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #ffffff;
+}
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #444;
+    border-radius: 10px;
+    box-shadow: 0 0 900px #8605e9;
+    width: 500px;
+}
+
+label {
+    color: #68E905;
+    padding: 10px;
+}
+
+input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #68E905;
+    color: #000;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #ffffff;
+}
